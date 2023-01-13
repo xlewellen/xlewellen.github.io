@@ -42,6 +42,13 @@ p {
     padding: 0;
 }
 
+p3 {
+    font-size: max(1.5vw, 30px); 
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -92,7 +99,7 @@ p {
 /* Home Page */
 
 .home{
-    background-image: url("Images/mountain.jpg");
+    background-image: url("Images/path.jpg");
 }
 
 .centered {
@@ -104,7 +111,7 @@ p {
 
 .shadow {
     color: white;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 2px 2px 0.5vw black;
     margin: auto;
     text-align: center;
 }
@@ -127,7 +134,6 @@ p {
 .imageshadow{
     width: 30px;
     -webkit-filter: drop-shadow(1px 1px 1px black);
-    filter: drop-shadow(1px 1px 1px black);
 }
 
 /* About Page */
