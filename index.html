@@ -10,6 +10,7 @@
         <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
         <link rel="stylesheet" href="main.css">
+        <script src="script.js"></script> 
     </head>
     <body>
         
@@ -17,6 +18,7 @@
             <a href="#home">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#experience">EXPERIENCE</a>
+            <a href="#projects">PROJECTS</a>
             <a href="#contact">CONTACT</a>
         </nav>
         
@@ -87,7 +89,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <p style>
+                        <p>
                             I’m always interested in new software engineering and design projects. If you think I would be a good fit, you can find my contact information below.
                         </p>
                     </div>
@@ -236,9 +238,68 @@
             </div>
         </div>
         </section>
+        <script>
+            function modalClose() {
+                const modal = document.getElementById('hhh_modal');
+                modal.style.opacity = "0";
+                modal.style.pointerEvents = "none";
+            }
+
+            function modalOpen() {
+                const modal = document.getElementById('hhh_modal');
+                modal.style.opacity = "1";
+                modal.style.pointerEvents = "auto";
+            }
+        </script>
+        <section id="projects">
+            <div class="about">
+                <div class="summary">
+                    <h1>Projects</h1>
+                    <div class="row">
+                        <div style="flex:55%; text-align: center;">
+                            <p>
+                               Check out some of the things that I've worked on!
+                            </p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 60px">
+                        <div class="longRow">
+                            <div class="modal_opener" style="flex: 33%; padding: 20px;">
+                                <h3 style="padding-top: 10px">Hungry Hungry Hadamards</h3>
+                                <p style="padding-top: 10px">A small game made using Unity and programmed in C# meant to educate students about the basics of logic gates in Quantum computing through a fun and hands-on experience.</p>
+                                <img onclick="modalOpen()" src="Images/hhhscreenshot2.jpg" style="width: 500px; border: 5px solid #555;">
+                            </div>
+                    </div>
+                    <div class="modal-container" id="hhh_modal">
+                        <div class="modal">
+                            <img src="Images/hhhscreenshot2.jpg">
+                            <h1>Hungry Hungry Hadamards</h1>
+                            <p>A small game made using Unity and programmed in C# meant to educate students about the basics of logic gates in Quantum computing through a fun and hands-on experience.</p>
+                            <div class="modal-buttons">
+                                <a href="hhh.html">TRY IT</a>
+                                <a href="https://github.com/xlewellen/quantumGame">DETAILS</a>
+                                <a id="test" onclick="modalClose()">CLOSE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="text-align: center; margin: 1vh;">
+                        To see more of my projects...
+                    </h3>
+                    <div class="row" style="padding-bottom: 5vh;">
+                        <div style="flex: 50%;">
+                            <a herf="https://github.com/xlewellen">
+                                <button>
+                                    Visit my GitHub!
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section id="contact">
-            <div class="contact">
+        <div class="contact">
             <div class="summary" style="padding: 40px">
                 <h2 style="padding-bottom: 30px;">Contact Me</h2>
                 <div class="row">
@@ -260,8 +321,9 @@
                             </a>
                         </div>
                     </div>
-            </div>
+                </div>
             
+            </div>
         </div>
         </section>
         

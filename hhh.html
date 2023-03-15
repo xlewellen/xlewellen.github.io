@@ -4,12 +4,38 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | QuantumGame</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="Images/x.png" />
     <link rel="stylesheet" href="TemplateData/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <style>
+      button {
+        color: #ffffff;
+        background-color: #2E9CCA;
+        font-size: 19px;
+        border-radius: 5px;
+        padding: 9px 100px;
+        cursor: pointer;
+              border-width: 0px;
+              transition-duration: 0.2s;
+      }
+      button:hover {
+        color: #ffffff;
+        background-color: #474747;
+      } 
+
+      h1, h2, h3, h4, h6 {
+        font-family: 'Work Sans', sans-serif;
+        letter-spacing: .12rem;
+        margin: 1vh;
+        padding: 0;
+        color: #2E9CCA;
+      }
+    </style>
   </head>
-  <body>
+  <body style="background-color: #282828;">
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=800 height=600></canvas>
+      <h1>Hungry Hungry Hadamards</h1>
+      <canvas style="border: 5px solid #555;" id="unity-canvas" width=800 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -18,11 +44,16 @@
       </div>
       <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">QuantumGame</div>
       </div>
     </div>
+      <div style="margin: 10px">
+          <a href="index.html#project">
+              <button>
+                  Back
+              </button>
+          </a>
+      </div>
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");

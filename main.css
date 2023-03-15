@@ -177,6 +177,76 @@ p3 {
     color: #282828;
 }
 
+.modal img {
+    width: 500px;
+    max-width: 100%;
+}
+
+.modal-container {
+    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    transition-duration: 0.3s;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+.modal_opener img{
+    transition-duration: 0.2s;
+}
+
+.modal_opener img:hover {
+    filter: brightness(50%);
+}
+
+.modal {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.modal p {
+    color: black;
+}
+.modal-buttons {
+    overflow: hidden;
+    background-color: #282828; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 10;
+    text-align: center
+}
+
+.modal-buttons a {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    text-decoration: none;
+    transition-duration: 0.2s;
+    
+}
+
+.modal-buttons a:hover {
+    color: gold;
+  }
+
+
+.modal h1 {
+    font-size: max(1vw, 30px);
+}
+
 .timeline::before {
     content: "";
     display: block;
