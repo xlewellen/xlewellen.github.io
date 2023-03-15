@@ -15,6 +15,7 @@ button {
     font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
+    margin-top: 20px
 }
 
 h1 {
@@ -201,6 +202,9 @@ p3 {
 
 .modal_opener img{
     transition-duration: 0.2s;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
 .modal_opener img:hover {
@@ -322,7 +326,6 @@ button:hover {
         padding-top: 20px;
         width: max(400px, 80%)
     }
-    button {margin-top: 40px;}
     .timeline::before {
         left: 5%;
     }

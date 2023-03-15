@@ -238,19 +238,6 @@
             </div>
         </div>
         </section>
-        <script>
-            function modalClose() {
-                const modal = document.getElementById('hhh_modal');
-                modal.style.opacity = "0";
-                modal.style.pointerEvents = "none";
-            }
-
-            function modalOpen() {
-                const modal = document.getElementById('hhh_modal');
-                modal.style.opacity = "1";
-                modal.style.pointerEvents = "auto";
-            }
-        </script>
         <section id="projects">
             <div class="about">
                 <div class="summary">
@@ -262,24 +249,40 @@
                             </p>
                         </div>
                     </div>
-                    <div style="margin-top: 60px">
+                    <div>
                         <div class="longRow">
                             <div class="modal_opener" style="flex: 33%; padding: 20px;">
-                                <h3 style="padding-top: 10px">Hungry Hungry Hadamards</h3>
-                                <p style="padding-top: 10px">A small game made using Unity and programmed in C# meant to educate students about the basics of logic gates in Quantum computing through a fun and hands-on experience.</p>
-                                <img onclick="modalOpen()" src="Images/hhhscreenshot2.jpg" style="width: 500px; border: 5px solid #555;">
+                                <h3 style="padding: 10px">Hungry Hungry Hadamards</h3>
+                                <img onclick="modalOpen('hhh_modal')" src="Images/hhhscreenshot2.jpg" style="width: 500px; border: 5px solid #555;">
                             </div>
-                    </div>
-                    <div class="modal-container" id="hhh_modal">
-                        <div class="modal">
-                            <img src="Images/hhhscreenshot2.jpg">
-                            <h1>Hungry Hungry Hadamards</h1>
-                            <p>A small game made using Unity and programmed in C# meant to educate students about the basics of logic gates in Quantum computing through a fun and hands-on experience.</p>
-                            <div class="modal-buttons">
-                                <a href="hhh.html">TRY IT</a>
-                                <a target="_blank"  href="https://github.com/xlewellen/quantumGame">DETAILS</a>
-                                <a onclick="modalClose()">CLOSE</a>
+                            <div class="modal_opener" style="flex: 33%; padding: 20px;">
+                                <h3 style="padding: 10px">Chiventure</h3>
+                                <img onclick="modalOpen('chi_modal')" src="Images/chiventure.png" style="width: 510px;">
                             </div>
+                            <div class="modal-container" id="hhh_modal">
+                                <div class="modal">
+                                    <img src="Images/hhhscreenshot2.jpg">
+                                    <h1>Hungry Hungry Hadamards</h1>
+                                    <p>A small game made using Unity and programmed in C# meant to educate students about the basics of logic gates in Quantum computing through a fun and hands-on experience.</p>
+                                    <div class="modal-buttons" srt>
+                                        <a href="hhh.html">TRY IT</a>
+                                        <a target="_blank"  href="https://github.com/xlewellen/quantumGame">DETAILS</a>
+                                        <a onclick="modalClose('hhh_modal')">CLOSE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-container" id="chi_modal">
+                                <div class="modal">
+                                    <img src="Images/chiventure.jpg">
+                                    <h1>Chiventure</h1>
+                                    <p>A C-based text adventure game engine made as a large-scale multiyear group project with the other members of a software development course.</p>
+                                    <div class="modal-buttons" srt>
+                                        <a target="_blank"  href="https://github.com/uchicago-cs/chiventure">DETAILS</a>
+                                        <a onclick="modalClose('chi_modal')">CLOSE</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                     <h3 style="text-align: center; margin: 1vh;">
